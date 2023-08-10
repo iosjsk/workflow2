@@ -5,10 +5,10 @@ on:
       - master
     types:
       - opened
-  push:
-    branches:
-       - alpha
-       - beta
+  # push:
+  #   branches:
+  #      - alpha
+  #      - beta
 jobs:
   project2:
     runs-on: ubuntu-latest
