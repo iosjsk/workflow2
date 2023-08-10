@@ -1,12 +1,17 @@
 name: project2
 on:
-  push:
+  pull_request:
     branches:
-       - alpha
-       - beta
+      - master
+    types:
+      - opened
+  # push:
+  #   branches:
+  #      - alpha
+  #      - beta
 jobs:
   project2:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
